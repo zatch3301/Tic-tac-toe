@@ -5,17 +5,14 @@
 
 }
 
-td{
-	height: 150px;
-	width: 150px;
-	text-align:  center;
-	border: 5px solid black;
-	font-size: 100px;
-}
+
 
 /************************************/
 /********GLOBAL STYLING ************/
-
+.cont{
+	margin: 0 auto;
+	padding: 20px;
+}
 
 .dark-mode{
 	background-color: black;
@@ -32,7 +29,7 @@ td{
 }
 
 .profile-container{
-	width: 15%;
+	width: 20%;
 	height: 100%;
 
 	display: flex;
@@ -84,3 +81,30 @@ td{
 }
 
 
+
+
+
+/************************************/
+/********PLAAYGROUND STYLING ************/
+.playground{
+	background-color: #7b74ed;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+
+td{
+	height: 150px;
+	width: 150px;
+	border-radius: 50px;
+	text-align:  center;
+	border: 5px solid black;
+	font-size: 100px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+}
