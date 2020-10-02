@@ -38,20 +38,99 @@ function changemarker()
                turn++; 
           }
      }
+     checkWinner();
 }
 
 for(let i=0;i<squares.length;i++)
 {
-     squares[i].addEventListener('click',changemarker); 
-     checkWinner;
+     squares[i].addEventListener('click', changemarker); 
 }
 
 
-//checking winner
+//checking the winner 
 function checkWinner()
 {
-     if(squares[0]=='X')
-          alert("Won");
+     if((squares[0].textContent=='X')&&(squares[1].textContent=='X')&&(squares[2].textContent=='X'))
+     {
+          alert("Player 1 Won");
+          clearBoard();
+     }
+          
+     else if((squares[0].textContent=='O')&&(squares[1].textContent=='O')&&(squares[2].textContent=='O'))
+     {
+          alert("Player 2 Won");
+          clearBoard();
+     }
+     else if((squares[3].textContent=='X')&&(squares[4].textContent=='X')&&(squares[5].textContent=='X'))
+     {
+          alert("Player 1 Won");
+          clearBoard();    
+     }
+     else if((squares[3].textContent=='O')&&(squares[4].textContent=='O')&&(squares[5].textContent=='O'))
+     {
+          alert("Player 2 Won");
+          clearBoard();
+     }
+     else if((squares[6].textContent=='X')&&(squares[7].textContent=='X')&&(squares[8].textContent=='X'))
+     {
+          alert("Player 1 Won");
+          clearBoard();
+     }
+     else if((squares[6].textContent=='O')&&(squares[7].textContent=='O')&&(squares[8].textContent=='O'))
+     {
+          alert("Player 2 Won");
+          clearBoard();
+     }
+     else if((squares[0].textContent=='X')&&(squares[3].textContent=='X')&&(squares[6].textContent=='X'))
+     {
+          alert("Player 1 Won");
+          clearBoard();
+     }
+     else if((squares[0].textContent=='O')&&(squares[3].textContent=='O')&&(squares[6].textContent=='O'))
+     {
+          alert("Player 2 Won");
+          clearBoard();
+     }
+     else if((squares[1].textContent=='X')&&(squares[4].textContent=='X')&&(squares[7].textContent=='X'))
+     {
+          alert("Player 1 Won");
+          clearBoard();
+     }
+     else if((squares[1].textContent=='O')&&(squares[4].textContent=='O')&&(squares[7].textContent=='O'))
+     {
+          alert("Player 2 Won");
+          clearBoard();
+     }
+     else if((squares[2].textContent=='X')&&(squares[5].textContent=='X')&&(squares[8].textContent=='X'))
+     {
+          alert("Player 1 Won");
+          clearBoard();
+     }
+     else if((squares[2].textContent=='O')&&(squares[5].textContent=='O')&&(squares[8].textContent=='O'))
+     {
+          alert("Player 2 Won");
+          clearBoard();
+     }
+     else if((squares[0].textContent=='X')&&(squares[4].textContent=='X')&&(squares[8].textContent=='X'))
+     {
+          alert("Player 1 Won");
+          clearBoard();    
+     }
+     else if((squares[0].textContent=='O')&&(squares[4].textContent=='O')&&(squares[8].textContent=='O'))
+     {
+          alert("Player 2 Won");
+          clearBoard();
+     }
+     else if((squares[2].textContent=='X')&&(squares[4].textContent=='X')&&(squares[6].textContent=='X'))
+     {
+          alert("Player 1 Won");
+          clearBoard();
+     }
+     else if((squares[2].textContent=='O')&&(squares[4].textContent=='O')&&(squares[6].textContent=='O'))
+     {
+          alert("Player 2 Won");
+          clearBoard();
+     }
 }
 
 // For loop to add event listeners to all the sqquares
