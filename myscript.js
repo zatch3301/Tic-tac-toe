@@ -1,5 +1,4 @@
 
-
 // Restart Game Button
 console.log('connected');
 var restart = document.querySelector('#b');
