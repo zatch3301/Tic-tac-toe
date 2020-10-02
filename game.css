@@ -13,6 +13,10 @@ td{
 	font-size: 100px;
 }
 
+/************************************/
+/********GLOBAL STYLING ************/
+
+
 .dark-mode{
 	background-color: black;
 	color: white;
@@ -30,7 +34,7 @@ td{
 .profile-container{
 	width: 15%;
 	height: 100%;
-	background-color: pink;
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -49,9 +53,34 @@ td{
 	padding: 20px;
 }
 .profile .avatar{
-width:50px;
-height: 50px;
-background-color: red;
-position: absolute;
-
+	width: 50px;
+	position: absolute;
+	top: -20px;
+	left: 30%;
+	margin: 0 auto;
+	padding: 10px;
+	height: 50px;
+	border: 5px solid white;
+	background-color: rgb(216, 211, 211);
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	border-radius: 50%	;
+	-webkit-border-radius: 50%	;
+	-moz-border-radius: 50%	;
+	-ms-border-radius: 50%	;
+	-o-border-radius: 50%	;
 }
+.profile .placeholder{
+	margin-top: 20px;
+	border-bottom: 3px dashed rgb(136, 127, 127);
+}
+.profile h3{
+	text-align: center;
+}
+.icon-big{
+	font-size: 20px;
+	color: #7b74ed;
+}
+
+
