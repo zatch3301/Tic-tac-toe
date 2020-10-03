@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> upstream/master
 // Restart Game Button
 console.log('connected');
 var restart = document.querySelector('#b');
@@ -20,28 +16,13 @@ function clearBoard()
      {
 		squares[i].textContent = '\u00A0';
 	}
-<<<<<<< HEAD
-	console.log(squares)
-	
-=======
 	turn = 1;
->>>>>>> upstream/master
 }
 
 restart.addEventListener('click',clearBoard);
 
 // Check the square marker
 
-<<<<<<< HEAD
-function changemarker(){
-	if(this.textContent===''){
-		this.textContent='❌';
-	}else if(this.textContent==='❌'){
-		this.textContent='⭕';
-	}else{
-		this.textContent='';
-	}
-=======
 function changemarker()
 {
      if((this.textContent!='X')&&(this.textContent!='O'))
@@ -58,7 +39,6 @@ function changemarker()
           }
      }
      checkWinner();
->>>>>>> upstream/master
 }
 
 for(let i=0;i<squares.length;i++)
