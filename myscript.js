@@ -131,6 +131,11 @@ function checkWinner()
           alert("Player 2 Won");
           clearBoard();
      }
+	else
+	{
+		alert("Game ends in a draw");
+		clearBoard();
+	}
 }
 
 // For loop to add event listeners to all the sqquares
