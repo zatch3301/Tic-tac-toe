@@ -29,12 +29,12 @@ function changemarker()
      {
           if(turn%2!=0)
           {
-               this.textContent='X';
+               this.textContent='❌';
                turn++;
           }
           else
           {
-               this.textContent='O';
+               this.textContent='⭕';
                turn++; 
           }
      }
