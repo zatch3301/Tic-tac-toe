@@ -132,14 +132,9 @@ function checkWinner()
           alert("Player 2 Won");
           clearBoard();
      }
-	else
-	{
-		alert("Game ends in a draw");
-		clearBoard();
-	}
 }
 
-let draw = -1;
+let draw = 0;
 
 function checkDraw()
 {
